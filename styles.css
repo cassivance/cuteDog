@@ -3,13 +3,19 @@ body{
 }
 
 img{
-    max-width: 40rem;
+    max-width: 25rem;
 }
 .dogs{
     display: flex;
+    align-content: space-around;
 }
 
-#vote .winners{
+.winners, .dog1{
     display: flex;
     flex-direction: column;
+}
+
+#topTen, #vote {
+    flex-direction: column;
+    align-content: center;
 }
