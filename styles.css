@@ -1,0 +1,8 @@
+.dogs{
+    display: flex;
+}
+
+#vote{
+    display: flex;
+    flex-direction: column;
+}
