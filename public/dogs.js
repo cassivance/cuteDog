@@ -37,11 +37,13 @@ $(function() {
 	function getAllDogs() {
 		winners.empty();
 		$.get('/all', function(all) {
-			console.log('all', all);
+			var totalVotes = 0;
 			for (var i in all) {
 				var current = all[i];
+				totalVotes += current.total;
 				winners.append(`<img src="${current.url}">Win rate: ${current.total > 0 ? Math.floor(current.wins/current.total * 100) : 0}%`);
 			}
+			winners.append(`<h3>Total Votes: ${totalVotes}</h3>`);
 		});
 	}
 
