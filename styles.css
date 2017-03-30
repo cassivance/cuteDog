@@ -1,8 +1,15 @@
+body{
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 40rem;
+}
 .dogs{
     display: flex;
 }
 
-#vote{
+#vote .winners{
     display: flex;
     flex-direction: column;
 }
