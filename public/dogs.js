@@ -53,7 +53,7 @@ $(function() {
 	});
 	top10Button.click(function() {
 		getAllDogs();
-		top10.show();
+		top10.css("display", "flex");
 		voteDiv.hide();
 	});
 	votingButton.click(function() {
