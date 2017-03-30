@@ -23,7 +23,7 @@ app.get('/dogs', function(req, res, next) {
 		var rand1 = Math.floor(Math.random() * (items.length));
 		var rand2 = Math.floor(Math.random() * (items.length));
 
-		while (rand1 == rand2) {
+		while (items.length > 5 && rand1 == rand2) {
 			rand2 = Math.floor(Math.random() * (items.length));
 		}
 		console.log('rand', rand1, rand2)
