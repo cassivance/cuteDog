@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+<input type="text" id="url">
+<button id="add">add</button>
+<div id="result"></div>
+</body>
+</html>
+
+<script>
+    $(function() {
+    	$('#add').click(function() {
+    		var body = {
+    			url: $('#url').val()
+            }
+    	    $.post('add-dog', body, function(response) {
+    	    	$('#result').append('done');
+    	    	setTimeout(function() {
+					$('#result').empty();
+                }, 1000);
+            });
+        });
+    })
+</script>
