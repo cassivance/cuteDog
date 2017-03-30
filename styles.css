@@ -2,7 +2,7 @@ body{
     /*background: white yellow no-repeat center center;*/
     overflow-x: hidden;
     font-family: 'Cedarville Cursive', cursive;
-    background-color: #FDF3CC;
+    background-color: #FFFFFF;
 }
 
 img{
@@ -42,6 +42,7 @@ h1, p{
   padding-left: 10px;
   margin-right: 20px;
   overflow: hidden;
+  color: #47423D;
 }
 
 #banner{
@@ -50,7 +51,7 @@ h1, p{
     left: 0px;
     width: 60%;
     height: 30%;
-    background-color: #F6CC20;
+    background-color: #CDE8E6;
     text-align: center;
     white-space: nowrap;
     text-overflow: hidden;
@@ -67,25 +68,26 @@ h1, p{
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    /*background-color: white;*/
-    color: black;
-    border: 1px solid darkgray;
-    background: repeating-linear-gradient(
+    background-color: #ffffff;
+    color: #47423D;
+    border: 2px solid #EFEDEF;
+    /*background: repeating-linear-gradient(
   45deg,
   white,
   white 10px,
-  #96E8DB 10px,
-  #96E8DB 20px
-);
+  #D3D1D3 10px,
+  #D3D1D3 20px
+);*/
 }
 
 .btn2
 {
   width: 60%;
   height: 45%;
-  background-color: #F6CC20;
+  background-color: #CDE8E6;
   border: none;
   position:absolute;
+  color: #47423D;
   bottom: -100px;
   text-align: center;
   font-size: 35px;
