@@ -40,7 +40,7 @@ $(function() {
 			console.log('all', all);
 			for (var i in all) {
 				var current = all[i];
-				winners.append(`<img src="${current.url}">wins: ${current.wins}`);
+				winners.append(`<img src="${current.url}">Win rate: ${current.total > 0 ? (current.wins/current.total * 100) : 0}%`);
 			}
 		});
 	}

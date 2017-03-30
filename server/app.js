@@ -70,7 +70,16 @@ app.post('/add-dog', function(req, res, next) {
 
 app.get('/all', function(req, res, next) {
 	collection.find().sort({wins: -1}).toArray(function(err, items) {
-		res.json(items);
+		var sortedItems = items.sort(function(a, b) {
+			if (a.total == 0 && b.total == 0)
+				return 0;
+			if (a.total == 0)
+				return 1;
+			if (b.total == 0)
+				return -1;
+			return (b.wins/b.total) - (a.wins/a.total);
+		})
+		res.json(sortedItems);
 	});	
 });
 
