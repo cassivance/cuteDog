@@ -5,10 +5,16 @@ body{
     background-color: #FFFFFF;
 }
 
-img{
+.winners img{
     max-width: 25rem;
     border: 1px solid white;
 }
+
+.dog1 img {
+    max-height: 25rem;
+    border: 1px solid white;
+}
+
 
 .dogs{
     display: flex;
