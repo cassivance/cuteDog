@@ -24,6 +24,10 @@ img{
     text-align: center;
 }
 
+.winners {
+    text-align: left;
+}
+
 #vote {
     display: flex;
     flex-direction: column;
@@ -39,10 +43,10 @@ img{
 
 
 h1, p{
-  padding-left: 10px;
-  margin-right: 20px;
-  overflow: hidden;
-  color: #47423D;
+    padding-left: 10px;
+    margin-right: 20px;
+    overflow: hidden;
+    color: #47423D;
 }
 
 #banner{
@@ -62,8 +66,8 @@ h1, p{
 
 
 .btn {
-  width: 25rem;
-  margin-bottom: 14px;
+    width: 25rem;
+    margin-bottom: 14px;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
@@ -82,18 +86,18 @@ h1, p{
 
 .btn2
 {
-  width: 60%;
-  height: 45%;
-  background-color: #CDE8E6;
-  border: none;
-  position:absolute;
-  color: #47423D;
-  bottom: -100px;
-  text-align: center;
-  font-size: 35px;
-  font-family: 'Cedarville Cursive', cursive;
-  align-self: flex-end;
-  white-space: nowrap;
-  z-index: -5;
-  line-height: 22px;
+    width: 60%;
+    height: 45%;
+    background-color: #CDE8E6;
+    border: none;
+    position:absolute;
+    color: #47423D;
+    bottom: -100px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Cedarville Cursive', cursive;
+    align-self: flex-end;
+    white-space: nowrap;
+    z-index: -5;
+    line-height: 22px;
 }

@@ -58,7 +58,7 @@ app.post('/add-dog', function(req, res, next) {
 });
 
 app.get('/all', function(req, res, next) {
-	collection.find().toArray(function(err, items) {
+	collection.find().sort({wins: -1}).toArray(function(err, items) {
 		res.json(items);
 	});	
 });
