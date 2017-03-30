@@ -12,7 +12,7 @@ var ObjectId = mongodb.ObjectID;
 var collection;
 MongoClient.connect("mongodb://localhost:27017/exampleDb", function(err, db) {
 	if (err) console.log('err', err);
-	collection = db.collection('test');
+	collection = db.collection('dogs');
 });
 
 app.use('/', express.static('public'));
