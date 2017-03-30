@@ -1,7 +1,6 @@
 body{
     overflow-x: hidden;
     font-family: 'Cedarville Cursive', cursive;
-
 }
 
 img{
@@ -12,13 +11,6 @@ img{
     display: flex;
     align-content: space-around;
 }
-
-.heading{
-  min-height:17%;
-  background-position: center;
-  background-size: cover;
-}
-
 
 .winners, .dog1{
     display: flex;
@@ -41,16 +33,10 @@ img{
 
 
 button {
-  /*
-  background-color: #f3f3f3;
-  border: 1.5px solid #b0b0b0;
-  color: black;
-  border-radius: 4px;
-*/
+
   margin-left:7px;
   margin-right: 7px;
   margin-top: 14px;
-  /*padding: 2px 20px;*/
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -60,14 +46,5 @@ button {
     cursor: pointer;
     background-color: white;
     color: black;
-    border: 2px solid black;
-    /*border-radius: 30px;*/
-
-}
-
-.cursors {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  height: 100vh;
+    border: 2px solid lightgray;
 }
