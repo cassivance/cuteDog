@@ -6,8 +6,16 @@ body{
 }
 
 img{
+    max-height: 25rem;
     max-width: 25rem;
     border: 1px solid white;
+}
+
+h1, p{
+    padding-left: 10px;
+    margin-right: 20px;
+    overflow: hidden;
+    color: #47423D;
 }
 
 .dogs{
@@ -42,62 +50,49 @@ img{
 
 
 
-h1, p{
-    padding-left: 10px;
-    margin-right: 20px;
-    overflow: hidden;
-    color: #47423D;
-}
-
 #banner{
     position: absolute;
-    /*top: 10px;*/
+    top: 20px;
     left: 0px;
     width: 60%;
-    height: 30%;
+    height: 130px;
     background-color: #CDE8E6;
     text-align: center;
     white-space: nowrap;
     text-overflow: hidden;
     /*margin-top: 20px;*/
     z-index: -5;
+  }
 
-}
 
-
-.btn {
-    width: 25rem;
+  .btn {
+  max-width: 25rem;
     margin-bottom: 14px;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #ffffff;
-    color: #47423D;
-    border: 2px solid #EFEDEF;
-    /*background: repeating-linear-gradient(
-  45deg,
-  white,
-  white 10px,
-  #D3D1D3 10px,
-  #D3D1D3 20px
-);*/
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #ffffff;
+      border: 1px solid lightgray;
+      color: #47423D;
+
 }
 
 .btn2
 {
-    width: 60%;
-    height: 45%;
-    background-color: #CDE8E6;
-    border: none;
-    position:absolute;
-    color: #47423D;
-    bottom: -100px;
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Cedarville Cursive', cursive;
-    align-self: flex-end;
-    white-space: nowrap;
-    z-index: -5;
-    line-height: 22px;
+  width: 60%;
+  height: 130px;
+  background-color: #CDE8E6;
+  border: none;
+  position:absolute;
+  color: #47423D;
+  bottom: -80px;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Cedarville Cursive', cursive;
+  align-self: flex-end;
+  white-space: nowrap;
+  z-index: -5;
+  line-height: 22px;
+  cursor: pointer;
 }
