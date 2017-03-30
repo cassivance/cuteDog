@@ -18,9 +18,17 @@ MongoClient.connect("mongodb://localhost:27017/exampleDb", function(err, db) {
 app.use('/', express.static('public'));
 
 app.get('/dogs', function(req, res, next) {
-	collection.aggregate([{$sample: {size: 2}}]).toArray(function(err, items) {
-		res.json(items);
-	});;
+	// ugly way to get 2 randoms due to mongo versioning issues
+	collection.find().toArray(function(err, items) {
+		var rand1 = Math.floor(Math.random() * (items.length));
+		var rand2 = Math.floor(Math.random() * (items.length));
+
+		console.log('rand', rand1, rand2)
+		var result = [];
+		result.push(items[rand1]);
+		result.push(items[rand2]);
+		res.json(result);
+	});
 });
 
 app.post('/dogs', function(req, res, next) {
